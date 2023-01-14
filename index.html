@@ -8,17 +8,19 @@
     <meta name="description" content="Portafolio Web by Mattias Duarte">
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <title>Portafolio | Mattias Duarte</title>
 </head>
 
 <body>
+    
     <header>
         <nav>
             <div class="nav_container">
                 <h1>Mattias Duarte</h1>
 
-                <ul class="menu">
+                <ul class="menu" id="nav-menu">
 
                     <li class="menu_item">
                         <a href="#inicio" class="menu_item_link">
@@ -26,30 +28,33 @@
                         </a>
                     </li>
 
-                    <li class="menu_item" class="menu_item_link">
-                        <a href="#informacion">
+                    <li class="menu_item" >
+                        <a href="#informacion" class="menu_item_link">
                             Informacion
                         </a>
                     </li>
 
-                    <li class="menu_item" class="menu_item_link">
-                        <a href="#portafolio">
+                    <li class="menu_item" >
+                        <a href="#portafolio" class="menu_item_link">
                             Portafolio
                         </a>
                     </li>
 
-                    <li class="menu_item" class="menu_item_link">
-                        <a href="#servicio">
+                    <li class="menu_item" >
+                        <a href="#servicio" class="menu_item_link">
                             Servicio
                         </a>
                     </li>
 
-                    <li class="menu_item" class="menu_item_link">
-                        <a href="#contacto">
+                    <li class="menu_item" >
+                        <a href="#contacto" class="menu_item_link">
                             Contacto
                         </a>
                     </li>
                 </ul>
+                <div id="nav-btn" class="nav_btn">
+                    <i class="uil uil-apps"></i>
+                </div>
             </div>
         </nav>
     </header>
@@ -146,22 +151,22 @@
                 <h2>Servicios</h2>
                 <div class="servicios_cards">
                     <!-- ICONO VA AQUI -->
-                    <div class="card_item">
+                    <div class="servicio_card_item">
                         <h3>Desarrollo Frontend</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis necessitatibus ullam itaque aut obcaecati, quaerat nihil? Magni corporis non tempore tempora itaque quod aspernatur autem! Porro amet incidunt deleniti libero?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis necessitatibus ullam itaque aut obcaecati, quaerat nihil?</p>
                         <a href="#contacto">Contactar</a>
                     </div>
                     
 
-                    <div class="card_item">
+                    <div class="servicio_card_item">
                         <h3>Desarrollo Backend</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis necessitatibus ullam itaque aut obcaecati, quaerat nihil? Magni corporis non tempore tempora itaque quod aspernatur autem! Porro amet incidunt deleniti libero?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis necessitatibus ullam itaque aut obcaecati, quaerat nihil?</p>
                         <a href="#contacto">Contactar</a>
                     </div>
 
-                    <div class="card_item">
+                    <div class="servicio_card_item">
                         <h3>Desarrollo Movil</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis necessitatibus ullam itaque aut obcaecati, quaerat nihil? Magni corporis non tempore tempora itaque quod aspernatur autem! Porro amet incidunt deleniti libero?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis necessitatibus ullam itaque aut obcaecati, quaerat nihil?</p>
                         <a href="#contacto">Contactar</a>
                     </div>
                 </div>
@@ -199,6 +204,10 @@
             </div>
         </section>
     </main>
+
+    <a href="#" class="scroll_up">
+        <i class="uil uil-arrow-up"></i>
+    </a>
     <footer>
         <div>
             <div>
@@ -240,5 +249,7 @@
         </div>
         <p> &copy;Mattias Duarte - 2023</p>
     </footer>
+
+    <script src="./assets//javascript//main.js"></script>
 </body>
 </html>

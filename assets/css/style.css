@@ -65,6 +65,26 @@ nav{
     gap: 1rem;
 }
 
+@media ( max-width:628px ) {
+    .menu{
+        position: fixed;
+        background-color: whitesmoke;
+        width: 100%;
+        top: -100%;
+        left: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s ease-in-out;
+    }
+}
+
+.show_menu{
+    top: 0;
+}
+
 .menu_item a{
     color: rgb(65, 65, 65);
     font-weight: 600;
@@ -75,6 +95,16 @@ nav{
     color: black;
 }
 
+.nav_btn{
+    cursor: pointer;
+    display: none;
+}
+
+@media ( max-width:628px ) {
+    .nav_btn{
+        display: block;
+    }
+}
 
 
 /* SECTION INICIO */
@@ -148,9 +178,35 @@ nav{
     gap: 2rem;
 }
 
+.servicio_card_item{
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
 /* CONTACTO */
 .contacto{
     display: flex;
     justify-content: space-evenly;
 }
 
+/* SCROLL UP */
+.scroll_up{
+    position: fixed;
+    bottom: -100%;
+    cursor: pointer;
+    right: 3rem;
+    background-color: aliceblue;
+    color: black;
+    font-size: 1.25rem;
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease-in-out;
+}
+
+.show-scroll{
+    bottom: 3rem;
+}

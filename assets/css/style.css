@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* RESET CSS */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    min-height: 80vh;
+    padding: 5rem 0 2rem;
+}
+
+img{
+    width: 100%;
+}
+
+/* REUSABLE CLASSES */
+.container{
+    width: 90%;
+    margin: 0 auto ;
+
+}
+
+/* NAVBAR */
+header{
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 1rem 0;
+    margin: 0 auto ;
+}
+
+
+.menu{
+    display: flex;
+    gap: 1rem;
+}
+
+.menu_item a{
+    color: rgb(65, 65, 65);
+    font-weight: 600;
+}
+
+.menu_item a:hover{
+    transition: all .3s ease-in-out;
+    color: black;
+}
+
+
+
+/* SECTION INICIO */
+.inicio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio_content h1{
+    font-size: 4rem;
+}   
+
+/* INFORMACION */
+.informacion_content{
+    display: flex;
+}
+
+@media( max-width: 620px ){
+    .informacion_content{
+        flex-direction: column;
+    }
+}
+
+.informacion h2{
+    text-align: center;
+}
+
+.informacion_content img{
+    max-width: 500px;
+}
+
+.informacion_description h2{
+    text-align: start;
+    margin-bottom: 1rem;
+}
+
+/* PORTAFOLIO */
+.portafolio_title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.portafolio_cards{
+    display: flex;
+    gap: 2rem;
+}
+
+.card_item{
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.card_item_description{
+    /* text-align: center; */
+    padding: 1rem;
+}
+
+@media ( max-width: 620px ) {
+    .portafolio_cards{
+        flex-direction: column;
+    }
+}
+
+/* SERVICIOS */
+.servicios_cards{
+    display: flex;
+    gap: 2rem;
+}
+
+/* CONTACTO */
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+}
+
